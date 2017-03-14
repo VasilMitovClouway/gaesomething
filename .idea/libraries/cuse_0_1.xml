@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cuse-0.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/cuse-0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

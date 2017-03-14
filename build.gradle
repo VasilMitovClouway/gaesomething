@@ -1,0 +1,58 @@
+group 'com.clouway'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'appengine'
+
+
+
+repositories {
+    mavenCentral()
+}
+
+compileJava {
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
+    println "Compile was invoked " + sourceCompatibility
+}
+
+
+dependencies {
+    appengineSdk 'com.google.appengine:appengine-java-sdk:1.9.49'
+    compile group: 'com.google.appengine', name: 'appengine-api-1.0-sdk', version: '1.9.49'
+    compile 'com.sendgrid:java-http-client:4.0.0'
+    compile 'com.google.oauth-client:google-oauth-client:1.22.0'
+    compile 'javax.servlet:servlet-api:2.5'
+    compile 'com.google.sitebricks:sitebricks:0.8.9'
+    compile 'com.google.inject:guice:3.0'
+    compile group: 'org.freemarker', name: 'freemarker', version: '2.3.14'
+    compile group: 'com.google.guava', name: 'guava', version: '19.0'
+    compile group: 'com.google.cloud', name: 'google-cloud-datastore', version: '0.9.2-beta'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+buildscript {    // Configuration for building
+
+    repositories {
+        jcenter()    // Bintray's repository - a fast Maven Central mirror & more
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.appengine:gradle-appengine-plugin:1.9.49'
+    }
+}
+
+appengine {
+    httpPort= 8080
+    downloadSdk = true
+    appcfg {
+        oauth2 = true
+    }
+}
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+
+

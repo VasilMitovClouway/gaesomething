@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GAE1.7.2.iml" filepath="$PROJECT_DIR$/.idea/modules/GAE1.7.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GAE1.7.2_endpointsSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/GAE1.7.2_endpointsSrc.iml" group="GAE1.7.2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GAE1.7.2_functionalTest.iml" filepath="$PROJECT_DIR$/.idea/modules/GAE1.7.2_functionalTest.iml" group="GAE1.7.2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GAE1.7.2_main.iml" filepath="$PROJECT_DIR$/.idea/modules/GAE1.7.2_main.iml" group="GAE1.7.2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GAE1.7.2_test.iml" filepath="$PROJECT_DIR$/.idea/modules/GAE1.7.2_test.iml" group="GAE1.7.2" />
+    </modules>
+  </component>
+</project>

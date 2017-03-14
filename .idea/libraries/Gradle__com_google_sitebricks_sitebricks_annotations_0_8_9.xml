@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.sitebricks:sitebricks-annotations:0.8.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.sitebricks/sitebricks-annotations/0.8.9/d746ed265a20b4dd9903dbeb90bab577b81740de/sitebricks-annotations-0.8.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.sitebricks/sitebricks-annotations/0.8.9/5d516e2841ffdf7544786b575154f0034232b2df/sitebricks-annotations-0.8.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

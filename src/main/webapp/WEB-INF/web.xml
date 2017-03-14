@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+  <servlet>
+    <servlet-name>homeServlet</servlet-name>
+    <servlet-class>com.clouway.http.HomeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>homeServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>resServlet</servlet-name>
+    <servlet-class>com.clouway.http.ResourceServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>resServlet</servlet-name>
+    <url-pattern>/assets/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>registerServlet</servlet-name>
+    <servlet-class>com.clouway.http.RegisterContactServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>registerServlet</servlet-name>
+    <url-pattern>/registerContact</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>findServlet</servlet-name>
+    <servlet-class>com.clouway.http.FindContactServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>findServlet</servlet-name>
+    <url-pattern>/findContact</url-pattern>
+  </servlet-mapping>
+
+</web-app>

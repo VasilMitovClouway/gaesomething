@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" type="text/css" href="/assets/project.css">
+</head>
+<body>
+<form action="/registerContact" method="post">
+    <h2>Register contact</h2>
+    <br>
+    <h2>Name:</h2>
+    <textarea name="contactName" rows="1" cols="15"></textarea>
+    <h2>Email:</h2>
+    <textarea name="email" rows="1" cols="15"></textarea>
+    <h2>Phone:</h2>
+    <input type="number" name="phone"/>
+    </div>
+    <input type="submit" onclick="submit" value="Register Contact">
+</form>
+
+
+<form action="/findContact" method="get">
+    <h2>Find by name or names starting with. Empty for all contacts.</h2>
+    <textarea name="findName" rows="1" cols="15"></textarea>
+    <input type="submit" onclick="submit" value="Find Contact">
+</form>
+
+<div class="contactList">
+    <#list contactList as contact>
+        <table class="table">
+            <tr>
+                <th>${contact.name}<br>
+                </th>
+            </tr>
+            <tr>
+                <td>Phone: ${contact.phone}</td>
+            </tr>
+            <tr>
+                <td>Email ${contact.email}</td>
+            </tr>
+        </table>
+    </#list>
+</div>
+
+</body>
+</html>
